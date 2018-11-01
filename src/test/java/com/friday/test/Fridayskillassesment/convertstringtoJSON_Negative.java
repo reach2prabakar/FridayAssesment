@@ -29,14 +29,14 @@ public class convertstringtoJSON_Negative extends Dataparser{
 	@Test(dataProvider="testScripts" , timeOut = 90000)
 	public void TC_05_negative(String sno, String testdata) throws FileNotFoundException{
 		logger.info("Test data "+testdata);
-		splitdata(testdata);
+		splitdata_negative(testdata);
 		jsonparser(resultmap);
 	}
 	
 	@Test(dataProvider="testScripts" , timeOut = 90000)
 	public void TC_06_negative(String sno, String testdata) throws FileNotFoundException{
 		logger.info("Test data "+testdata);
-		splitdata(testdata);
+		splitdata_negative(testdata);
 		jsonparser(resultmap);
 	}
 	

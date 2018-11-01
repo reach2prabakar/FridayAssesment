@@ -1,5 +1,6 @@
 package com.friday.test.Fridayskillassesment.processor;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.io.FileNotFoundException;
@@ -43,6 +44,29 @@ public class Dataparser {
 			System.out.println("Street name should have string values");
 			logger.error("Street name is "+strt+" - Street name should have string values with no numbers between");
 			assertTrue(false,"Street name is "+strt+" - Street name should have string values with no numbers between");
+		}
+		sethousenumber(housenum);
+		setstreet(strt);
+	}
+	
+	public void splitdata_negative(String address){
+		 housenum = getMatch(Pattern.compile("((^\\d+)|(^No \\d+)|(^# \\d+))|((No \\d+$)|(# \\d+$)|( \\d+[\\s]?[\\w]?$))"), address);
+		 strt = address.replaceAll(housenum, "").trim().replaceAll("^,|,$", "");
+		
+		String localvar = getMatch(Pattern.compile("\\d+"), housenum);
+		logger.info("the housenumber after compiling :"+localvar);
+		if(localvar.isEmpty()||localvar==null){
+			System.out.println("house number should have numeric values");
+			logger.error("House number is "+address+" - house number should have numeric values");
+			assertFalse(false,"House number is "+address+" - house number should have numeric values");
+			
+		}
+		localvar = strt.replaceAll("(^\\d+)|(\\d+$)", "").trim();
+		logger.info("the street name after compiling :"+localvar);
+		if(!localvar.matches("\\D+")){
+			System.out.println("Street name should have string values");
+			logger.error("Street name is "+strt+" - Street name should have string values with no numbers between");
+			assertFalse(false,"Street name is "+strt+" - Street name should have string values with no numbers between");
 		}
 		sethousenumber(housenum);
 		setstreet(strt);
