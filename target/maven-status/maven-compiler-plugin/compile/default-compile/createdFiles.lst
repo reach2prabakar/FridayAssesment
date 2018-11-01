@@ -1,0 +1,5 @@
+com\friday\test\Fridayskillassesment\library\Inputenum.class
+com\friday\test\Fridayskillassesment\processor\Dataparser.class
+com\friday\test\Fridayskillassesment\processor\TestSuiteProc.class
+com\friday\test\Fridayskillassesment\library\WebTestListeners.class
+com\friday\test\Fridayskillassesment\processor\ReadDatasheet.class

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="14" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="FridayAssesment Suite" duration-ms="917" started-at="2018-11-01T04:18:11Z" finished-at="2018-11-01T04:18:12Z">
+    <groups>
+    </groups>
+    <test name="StringAddresstoJson" duration-ms="917" started-at="2018-11-01T04:18:11Z" finished-at="2018-11-01T04:18:12Z">
+      <class name="com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative">
+        <test-method status="FAIL" signature="TC_05_negative(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative@5afa04c]" name="TC_05_negative" duration-ms="8" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Blaufeldweg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[House number is Blaufeldweg - house number should have numeric values expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: House number is Blaufeldweg - house number should have numeric values expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.friday.test.Fridayskillassesment.processor.Dataparser.splitdata(Dataparser.java:37)
+	at com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative.TC_05_negative(convertstringtoJSON_Negative.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_negative -->
+        <test-method status="FAIL" signature="TC_06_negative(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative@5afa04c]" name="TC_06_negative" duration-ms="3" started-at="2018-11-01T09:48:12Z" data-provider="testScripts" finished-at="2018-11-01T09:48:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[# 1540 wintralle 3 berlin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Street name is wintralle 3 berlin - Street name should have string values with no numbers between expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Street name is wintralle 3 berlin - Street name should have string values with no numbers between expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.friday.test.Fridayskillassesment.processor.Dataparser.splitdata(Dataparser.java:45)
+	at com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative.TC_06_negative(convertstringtoJSON_Negative.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06_negative -->
+      </class> <!-- com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative -->
+      <class name="com.friday.test.Fridayskillassesment.convertstringtoJSON">
+        <test-method status="PASS" signature="intializeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="intializeSuite" is-config="true" duration-ms="23" started-at="2018-11-01T09:48:11Z" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeSuite -->
+        <test-method status="PASS" signature="TC_02(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_02" duration-ms="51" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Winterallee 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="TC_02(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_02" duration-ms="4" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Musterstrasse 45]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="TC_02(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_02" duration-ms="5" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Blaufeldweg 123B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="TC_03(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_03" duration-ms="3" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Am Bächle 23]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method status="PASS" signature="TC_03(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_03" duration-ms="4" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Auf der Vogelwiese 23 b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method status="PASS" signature="TC_04(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_04" duration-ms="2" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4, rue de la revolution]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="TC_04(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_04" duration-ms="4" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200 Broadway Av]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="TC_04(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_04" duration-ms="7" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Calle Aduana, 29]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="TC_04(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_04" duration-ms="2" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Calle 39 No 1540]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="TC_04(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_04" duration-ms="2" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[# 1540 Calle 39]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="TC_04(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_04" duration-ms="15" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[No 1540 Calle 39]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="TC_04(java.lang.String, java.lang.String)[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="TC_04" duration-ms="3" started-at="2018-11-01T09:48:11Z" data-provider="testScripts" finished-at="2018-11-01T09:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[No Calle 39]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="generateJsonfile()[pri:0, instance:com.friday.test.Fridayskillassesment.convertstringtoJSON@59e84876]" name="generateJsonfile" is-config="true" duration-ms="7" started-at="2018-11-01T09:48:12Z" finished-at="2018-11-01T09:48:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateJsonfile -->
+      </class> <!-- com.friday.test.Fridayskillassesment.convertstringtoJSON -->
+    </test> <!-- StringAddresstoJson -->
+  </suite> <!-- FridayAssesment Suite -->
+</testng-results>

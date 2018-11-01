@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="FridayAssesment Suite" data-provider-thread-count="1">
+
+	<listeners>
+		<listener class-name="com.friday.test.Fridayskillassesment.library.WebTestListeners" />
+	</listeners>
+
+   <test name="StringAddresstoJson">
+    <classes>
+      <class name="com.friday.test.Fridayskillassesment.convertstringtoJSON" />
+      <class name="com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative" >
+      	<methods>
+					<exclude name="TC_05_negative"/>
+					<exclude name="TC_06_negative"/>
+		</methods> 
+	</class>	
+    </classes>
+  </test>
+</suite>

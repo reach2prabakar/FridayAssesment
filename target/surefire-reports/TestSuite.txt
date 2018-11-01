@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.798 sec <<< FAILURE! - in TestSuite
+TC_05_negative(com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: House number is Blaufeldweg - house number should have numeric values expected [true] but found [false]
+	at com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative.TC_05_negative(convertstringtoJSON_Negative.java:32)
+
+TC_06_negative(com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: Street name is wintralle 3 berlin - Street name should have string values with no numbers between expected [true] but found [false]
+	at com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative.TC_06_negative(convertstringtoJSON_Negative.java:39)
+

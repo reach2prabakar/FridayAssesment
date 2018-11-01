@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Framework Suite]" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.friday.test.Fridayskillassesment.library.WebTestListeners"/>
+  </listeners>
+  <test name="Main(failed)">
+    <classes>
+      <class name="com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative">
+        <methods>
+          <include name="TC_05_negative" invocation-numbers="0"/>
+          <include name="TC_06_negative" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.friday.test.Fridayskillassesment.convertstringtoJSON_Negative -->
+    </classes>
+  </test> <!-- Main(failed) -->
+</suite> <!-- Failed suite [Framework Suite] -->
